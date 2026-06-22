@@ -1,4 +1,4 @@
-# Supply Chain & Inventory Analytics
+# Supply-Chain-Performance-Analytics
 
 ## Project Overview
 
