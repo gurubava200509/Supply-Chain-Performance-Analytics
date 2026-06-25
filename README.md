@@ -146,7 +146,7 @@ Supply-Chain-Inventory-Analytics/
 ## Project Files
 
 ### Power BI Dashboard
-[supply_chain_dashboard.pbix](./supply_chain_dashboard.pbix)
+[supply_chain_dashboard.pbix](./Supply_chain_dashboard.pbix)
 
 ### SQL Analysis
 [supply_chain_analysis.sql](./supply_chain_analysis.sql)
