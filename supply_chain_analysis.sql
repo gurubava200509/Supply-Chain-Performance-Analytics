@@ -1,5 +1,4 @@
 
--- SQL BUSINESS ANALYSIS
 -- Total Revenue
 SELECT ROUND(SUM(Sales),2) AS Total_Revenue
 FROM orders_staging;
@@ -12,7 +11,6 @@ FROM orders_staging;
 SELECT COUNT(*) AS Total_Orders
 FROM orders_staging;
 
--- MARKET PERFORMANCE ANALYSIS
 -- Revenue by Market
 SELECT
 Market,
@@ -37,7 +35,6 @@ RANK() OVER(ORDER BY SUM(Sales) DESC) AS Revenue_Rank
 FROM orders_staging
 GROUP BY Market;
 
--- PRODUCT & CATEGORY ANALYSIS
 -- Top 10 Categories by Revenue
 SELECT
 `Category Name`,
@@ -74,7 +71,6 @@ GROUP BY `Product Name`
 ORDER BY Revenue DESC
 LIMIT 10;
 
--- CUSTOMER ANALYSIS
 -- Revenue by Customer Segment
 SELECT
 `Customer Segment`,
@@ -91,7 +87,6 @@ FROM orders_staging
 GROUP BY `Customer Segment`
 ORDER BY Profit DESC;
 
--- LOGISTICS & DELIVERY ANALYSIS
 -- Delivery Status Distribution
 SELECT
 `Delivery Status`,
@@ -134,7 +129,6 @@ GROUP BY `Order Country`
 ORDER BY Revenue DESC
 LIMIT 10;
 
--- ORDER MANAGEMENT ANALYSIS
 -- Order Status Distribution
 SELECT
 `Order Status`,
@@ -143,7 +137,6 @@ FROM orders_staging
 GROUP BY `Order Status`
 ORDER BY Orders_Count DESC;
 
--- TIME SERIES ANALYSIS
 -- Monthly Revenue Trend
 SELECT
 MONTH(`order date (DateOrders)`) AS Month_No,
